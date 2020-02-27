@@ -1,18 +1,26 @@
 .navbar {
   width: 100%;
-  height: 2.5rem;
 
   &__list {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   &__item {
+    display: grid;
+    justify-items: center;
+    align-content: start;
   }
 
   &__link {
     font-size: 1.2rem;
     color: var(--color-grey-light-1);
     text-decoration: none;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    fill: var(--color-grey-light-1);
   }
 }
