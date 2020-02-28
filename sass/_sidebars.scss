@@ -1,0 +1,52 @@
+.profile {
+  height: 33vh;
+  background-color: #fff;
+  display: grid;
+
+  // &:not(:last-child) {
+  //   margin-top: 1rem;
+  // }
+
+  &__header {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: max-content min-content repeat(2, max-content);
+    margin-bottom: 1rem;
+  }
+
+  &__header-img {
+    height: 5rem;
+    background-image: url(../img/header-blue.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transform: translateY(-4rem);
+  }
+
+  &__stats {
+  }
+
+  &__view-count {
+  }
+
+  &__saved-items {
+  }
+
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: #000;
+  }
+}
+
+.news {
+  height: 20vh;
+  background-color: peru;
+}

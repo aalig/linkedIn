@@ -31,6 +31,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1.6;
+  background-color: var(--color-grey-light-1);
 }
 
 .container {
@@ -39,12 +40,12 @@ body {
   }
 
   &__main {
-    background-color: var(--color-grey-light-1);
+    max-width: 120rem;
     height: 80vh;
-  }
-}
+    margin: 2.5rem auto;
 
-.main {
-  max-width: 120rem;
-  margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2.5fr 1.5fr;
+    column-gap: 2rem;
+  }
 }
