@@ -25,7 +25,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1.6;
-  background-color: var(--color-grey-light-1); }
+  background-color: var(--color-grey-light-2); }
 
 .container__header {
   background-color: #2c3e50; }
@@ -50,26 +50,29 @@ body {
     filter: brightness(0.6); }
 
 .profile {
-  height: 33vh;
-  background-color: #fff;
-  display: grid; }
+  height: 33vh; }
+  .profile > * {
+    background-color: snow;
+    margin-bottom: .5rem; }
   .profile__header {
     display: grid;
     justify-items: center;
-    grid-template-rows: max-content min-content repeat(2, max-content);
-    margin-bottom: 1rem; }
+    grid-template-rows: min-content 4rem repeat(2, minmax(4.5rem, 1fr)); }
   .profile__header-img {
-    height: 5rem;
+    height: 6rem;
     background-image: url(../img/header-blue.png);
     width: 100%;
     background-size: cover;
     background-position: center; }
+  .profile__h2 {
+    align-self: end;
+    margin-top: -1.5rem; }
   .profile__img {
-    height: 7.5rem;
-    width: 7.5rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
     border: 2px solid #fff;
-    transform: translateY(-4rem); }
+    transform: translateY(-50%); }
   .profile__icon {
     height: 1.75rem;
     width: 1.75rem;
