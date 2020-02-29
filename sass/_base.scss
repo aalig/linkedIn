@@ -4,8 +4,7 @@
   --color-secondary: #0f4c75;
 
   --color-grey-light-1: #f9f7f6;
-  --color-grey-light-2: #ccc;
-  --color-grey-light-3: #aaa;
+  --color-grey-light-2: #f5f5f5;
 
   --color-grey-dark-1: #2d4059;
   --color-grey-dark-2: #384259;
@@ -45,7 +44,7 @@ body {
     margin: 2.5rem auto;
 
     display: grid;
-    grid-template-columns: 1.2fr 2.5fr 1.5fr;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
     column-gap: 2rem;
   }
 }
