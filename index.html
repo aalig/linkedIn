@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i&display=swap"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700|Nunito:300,400,400i,600,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -76,32 +76,62 @@
           <div class="profile__header-img"></div>
           <img src="img/me.jpg" alt="Profile img" class="profile__img" />
           <h2 class="heading-2 profile__h2">Abdurahman Gugssa</h2>
-          <p class="paragraph paragraph-light">
+          <p class="paragraph paragraph--light">
             Senior Project Engineer at Wipro
           </p>
         </div>
         <div class="profile__stats">
-          <p class="paragraph paragraph-light">Who viewed your profile</p>
-          <div class="profile__view-count">24</div>
-          <p class="paragraph paragraph-light">Who viewed your profile</p>
-          <div class="profile__view-count">24</div>
-          <p class="paragraph paragraph-light">
-            Access exclusive tools & insights
-          </p>
-          <p class="paragraph paragraph-dark">
-            Access exclusive tools & insights
-          </p>
+          <div>
+            <div class="profile__stats-details">
+              <p class="paragraph paragraph--light">Who viewed your profile</p>
+              <div class="profile__view-count">24</div>
+            </div>
+            <div class="profile__stats-details">
+              <p class="paragraph paragraph--light">Connections</p>
+              <div class="profile__view-count">385</div>
+            </div>
+            <p class="paragraph paragraph-dark">
+              Grow your network
+            </p>
+          </div>
+          <div>
+            <p class="paragraph paragraph--light">
+              Access exclusive tools & insights
+            </p>
+            <p class="paragraph paragraph-dark">
+              Try premium free for one month
+            </p>
+          </div>
         </div>
         <div class="profile__saved-items">
           <svg class="profile__icon">
             <use xlink:href="img/sprite.svg#icon-bookmark"></use>
           </svg>
           <p class="paragraph paragraph-dark">
-            Access exclusive tools & insights
+            Saved items
           </p>
         </div>
       </section>
-      <section class="posts"></section>
+      <section class="posts">
+        <div class="posts__start">
+          <svg class="posts__icon">
+            <use xlink:href="img/sprite.svg#icon-new-message"></use>
+          </svg>
+          <p class="paragraph">Start a post</p>
+          <svg class="posts__icon">
+            <use
+              xlink:href="img/sprite.svg#icon-camera_altphoto_cameralocal_see"
+            ></use>
+          </svg>
+
+          <svg class="posts__icon">
+            <use xlink:href="img/sprite.svg#icon-videocam"></use>
+          </svg>
+          <svg class="posts__icon">
+            <use xlink:href="img/sprite.svg#icon-upload_file"></use>
+          </svg>
+        </div>
+      </section>
       <section class="news"></section>
     </main>
   </body>
