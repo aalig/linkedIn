@@ -1,6 +1,4 @@
 .profile {
-  height: 33vh;
-
   & > * {
     background-color: var(--color-white);
     margin-bottom: 0.2rem;
@@ -68,6 +66,93 @@
 }
 
 .news {
-  height: 20vh;
-  background-color: peru;
+  background-color: #fff;
+  display: grid;
+
+  padding: 0 1.5rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    color: rgba(#000, 0.6);
+    font-weight: 400;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    align-self: start;
+    padding: 0 1rem;
+
+    &:hover {
+      background-color: rgba(#000, 0.05);
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    p {
+      grid-column: 2 / -1;
+    }
+
+    &:hover {
+      background-color: rgba(#000, 0.15);
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: rgba(#000, 0.6);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-secondary);
+      text-decoration: underline;
+    }
+
+    &--more {
+      font-weight: 400;
+      margin-right: 0.5rem;
+
+      &:hover {
+        text-decoration: none;
+        color: rgba(#000, 0.6);
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &--large {
+      height: 1.2rem;
+      width: 1.2rem;
+      fill: var(--color-secondary);
+      margin-right: 0.5rem;
+    }
+
+    &--small {
+      height: 0.5rem;
+      width: 0.5rem;
+      fill: rgba(#000, 0.6);
+    }
+  }
 }
