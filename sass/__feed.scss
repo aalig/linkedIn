@@ -1,0 +1,36 @@
+.feed {
+  display: grid;
+
+  &__sort {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 1rem;
+    align-items: center;
+    border: none;
+
+    &--underline {
+      height: 1px;
+      background-color: rgba(#000, 0.15);
+    }
+
+    &--by {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      p {
+        &.paragraph--dark {
+          margin-left: 0.3rem;
+          margin-right: -0.5rem;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    &--sort {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}

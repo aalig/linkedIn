@@ -2,7 +2,8 @@
   & > * {
     background-color: var(--color-white);
     margin-bottom: 0.2rem;
-    box-shadow: 0 0.5rem 0.5rem rgba(#777, 0.5);
+    border: 1px solid rgba(#000, 0.15);
+    box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
   }
 
   &__header {
@@ -68,8 +69,9 @@
 .news {
   background-color: #fff;
   display: grid;
-
   padding: 0 1.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
+  border: 1px solid rgba(#000, 0.15);
 
   &__header {
     display: flex;
