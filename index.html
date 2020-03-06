@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700|Nunito:300,400,400i,600,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700|Nunito:300,400,400i,600,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -74,7 +71,7 @@
       <section class="profile">
         <div class="profile__header">
           <div class="profile__header-img"></div>
-          <img src="img/me.jpg" alt="Profile img" class="profile__img" />
+          <img src="img/profile.jpg" alt="Profile img" class="profile__img" />
           <h2 class="heading-2 profile__h2">Abdurahman Gugssa</h2>
           <p class="paragraph paragraph--light">
             Senior Project Engineer at Wipro
@@ -162,9 +159,43 @@
               </svg>
             </div>          
           </div>            
-         <div class="feed__person">
-           Person feed goes here...
-         </div>
+          <div class="feed__wrapper">
+            <div class="feed__notification">
+              <p class="paragraph paragraph--dark">Abdurahman Gugssa <span>likes this</span></p>
+            </div>            
+            <div class="feed__person">
+              <img src="img/profile.jpg" alt="Friend Profile Image" class="feed__person--img">
+              <div class="feed__person--details">
+                <p class="feed__person--name">Nejat H Abdurahman</span></p>
+                <p class="paragraph paragraph--light">National Sales Trainer: Guidance Residential</p>
+                <p class="paragraph paragraph--light">3h . Edited . </p>            
+              </div>               
+            </div>
+            <p class="feed__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
+            <p class="feed__more">...see more</p>
+            <div class="feed__likes">
+              <svg class="feed__icon--likes">
+                <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
+              </svg>
+              <svg class="feed__icon--likes">
+                <use xlink:href="img/sprite.svg#icon-lightbulb_outline"></use>
+              </svg>
+              <p class="feed__text">17 . 5 comments</p>
+            </div>
+            <div class="feed__feedback">
+              <svg class="feed__icon--feedback">
+                <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+              </svg>
+              <svg class="feed__icon--feedback">
+              <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
+              </svg>
+              <svg class="feed__icon--feedback">
+                <use xlink:href="img/sprite.svg#icon-share"></use>
+              </svg>
+            </div>
+          </div>
         </section>                 
       </section>
       <section class="news">
