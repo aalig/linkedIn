@@ -162,11 +162,14 @@
           <div class="feed__wrapper">
             <div class="feed__notification">
               <p class="paragraph paragraph--dark">Abdurahman Gugssa <span>likes this</span></p>
+              <svg class="feed__icon feed__icon--more">
+                <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+              </svg>
             </div>            
-            <div class="feed__person">
-              <img src="img/profile.jpg" alt="Friend Profile Image" class="feed__person--img">
-              <div class="feed__person--details">
-                <p class="feed__person--name">Nejat H Abdurahman</span></p>
+            <div class="feed__item">
+              <img src="img/profile.jpg" alt="Friend Profile Image" class="feed__item--img">
+              <div class="feed__item--details">
+                <p class="feed__item--name">Nejat H Abdurahman</span></p>
                 <p class="paragraph paragraph--light">National Sales Trainer: Guidance Residential</p>
                 <p class="paragraph paragraph--light">3h . Edited . </p>            
               </div>               
@@ -182,99 +185,197 @@
               <svg class="feed__icon--likes">
                 <use xlink:href="img/sprite.svg#icon-lightbulb_outline"></use>
               </svg>
-              <p class="feed__text">17 . 5 comments</p>
+              <p class="paragraph paragraph--light">17 . 5 comments</p>
             </div>
             <div class="feed__feedback">
-              <svg class="feed__icon--feedback">
-                <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+                </svg>
+                <p class="paragraph paragraph--light">Like</p>
+              </div>
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
+                  </svg>
+                <p class="paragraph paragraph--light">Comment</p>
+              </div>
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-share"></use>
+                </svg>
+                <p class="paragraph paragraph--light">Share</p>
+              </div>                                          
+            </div>
+          </div>
+
+          <div class="feed__wrapper">                 
+            <div class="feed__promoted">
+              <img src="img/microsoft.jpg" alt="Friend Profile Image" class="feed__item--img">
+              <div class="feed__item--details">
+                <p class="feed__item--name">Microsoft Developers</span></p>
+                <p class="paragraph paragraph--light">105,345 followers</p>
+                <p class="paragraph paragraph--light">Promoted</p>            
+              </div>   
+              <svg class="feed__icon feed__icon--more">
+                <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+              </svg>            
+            </div>
+            <p class="feed__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>        
+            <p class="feed__more">...see more</p>
+            <div class="feed__likes">
+              <svg class="feed__icon--likes">
+                <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
               </svg>
-              <svg class="feed__icon--feedback">
-              <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
+              <svg class="feed__icon--likes">
+                <use xlink:href="img/sprite.svg#icon-lightbulb_outline"></use>
               </svg>
-              <svg class="feed__icon--feedback">
-                <use xlink:href="img/sprite.svg#icon-share"></use>
-              </svg>
+              <p class="paragraph paragraph--light">17 . 5 comments</p>
+            </div>
+            <div class="feed__feedback">
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+                </svg>
+                <p class="paragraph paragraph--light">Like</p>
+              </div>
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
+                  </svg>
+                <p class="paragraph paragraph--light">Comment</p>
+              </div>
+              <div class="feed__feedback--item">
+                <svg class="feed__icon--feedback">
+                  <use xlink:href="img/sprite.svg#icon-share"></use>
+                </svg>
+                <p class="paragraph paragraph--light">Share</p>
+              </div>                                          
             </div>
           </div>
         </section>                 
       </section>
-      <section class="news">
-        <div class="news__header">
-          <h2 class="news__heading">Today's news and views</h2>
-          <svg class="news__icon news__icon--outline">
-            <use xlink:href="img/sprite.svg#icon-error_outline"></use>
-          </svg>          
-        </div>       
-        <ul class="news__list">
-          <li class="news__item">
-            <svg class="news__icon news__icon--large">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg>
-            <a href="#" class="news__link">Supply chains hit by virus</a>
-            <p class="paragraph paragraph--light">
-              Top news 
-              <svg class="news__icon news__icon--small">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg> 16,940 readers</span>
-            </p>
-          </li>
-          <li class="news__item">
-            <svg class="news__icon news__icon--large">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg>
-            <a href="#" class="news__link">Corona virus: Official updates</a>
-            <p class="paragraph paragraph--light">
-              6hr ago 
-              <svg class="news__icon news__icon--small">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg> 236,550 readers</span>
-            </p>
-          </li>
-          <li class="news__item">
-            <svg class="news__icon news__icon--large">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg>
-            <a href="#" class="news__link">Fed slices rates by half point</a>
-            <p class="paragraph paragraph--light">
-              45m ago
-              <svg class="news__icon news__icon--small">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg> 20,654 readers</span>
-            </p>
-          </li>
-          <li class="news__item">
-            <svg class="news__icon news__icon--large">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg>
-            <a href="#" class="news__link">Advice to your younger self</a>
-            <p class="paragraph paragraph--light">
-              8hr ago
-              <svg class="news__icon news__icon--small">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg> 116,875 readers</span>
-            </p>
-          </li>
-          <li class="news__item">
-            <svg class="news__icon news__icon--large">
-              <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-            </svg>
-            <a href="#" class="news__link"
-              >Airlines, airports feel virus impact</a
-            >
-            <p class="paragraph paragraph--light">
-              5hr ago
-              <svg class="news__icon news__icon--small">
+      <section class="sidebar-right">
+        <section class="news">
+          <div class="news__header">
+            <h2 class="news__heading">Today's news and views</h2>
+            <svg class="news__icon news__icon--outline">
+              <use xlink:href="img/sprite.svg#icon-error_outline"></use>
+            </svg>          
+          </div>       
+          <ul class="news__list">
+            <li class="news__item">
+              <svg class="news__icon news__icon--large">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-              </svg> 7,775 readers</span>
-            </p>
-          </li>
-        </ul>
-        <div class="news__more">
-          <a href="#" class="news__link news__link--more">Show more</a>          
-          <svg class="news__icon">
-            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
-          </svg>
-        </div>
+              </svg>
+              <a href="#" class="news__link">Supply chains hit by virus</a>
+              <p class="paragraph paragraph--light">
+                Top news 
+                <svg class="news__icon news__icon--small">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg> 16,940 readers</span>
+              </p>
+            </li>
+            <li class="news__item">
+              <svg class="news__icon news__icon--large">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg>
+              <a href="#" class="news__link">Corona virus: Official updates</a>
+              <p class="paragraph paragraph--light">
+                6hr ago 
+                <svg class="news__icon news__icon--small">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg> 236,550 readers</span>
+              </p>
+            </li>
+            <li class="news__item">
+              <svg class="news__icon news__icon--large">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg>
+              <a href="#" class="news__link">Fed slices rates by half point</a>
+              <p class="paragraph paragraph--light">
+                45m ago
+                <svg class="news__icon news__icon--small">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg> 20,654 readers</span>
+              </p>
+            </li>
+            <li class="news__item">
+              <svg class="news__icon news__icon--large">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg>
+              <a href="#" class="news__link">Advice to your younger self</a>
+              <p class="paragraph paragraph--light">
+                8hr ago
+                <svg class="news__icon news__icon--small">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg> 116,875 readers</span>
+              </p>
+            </li>
+            <li class="news__item">
+              <svg class="news__icon news__icon--large">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+              </svg>
+              <a href="#" class="news__link"
+                >Airlines, airports feel virus impact</a
+              >
+              <p class="paragraph paragraph--light">
+                5hr ago
+                <svg class="news__icon news__icon--small">
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg> 7,775 readers</span>
+              </p>
+            </li>
+          </ul>
+          <div class="news__more">
+            <a href="#" class="news__link news__link--more">Show more</a>          
+            <svg class="news__icon">
+              <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+        </section>
+        <section class="ad">
+          <div class="ad__header">
+            <p class="paragraph paragraph--light">Ad</p>
+            <svg class="ad__icon">
+              <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+            </svg>
+          </div>
+          <div class="ad__me">
+            <img src="img/profile.jpg" alt="Profile img" class="ad__img">
+            <div>
+              <p>Abdurahman, need a new challenge?</p>
+              <p class="paragraph paragraph--medium">We can help!</p>
+            </div>
+          </div>
+          <div class="ad__company"> 
+            <img src="img/microsoft.jpg" alt="Company logo" class="ad__img">
+            <div class="ad__company--position">
+              <p class="paragraph paragraph--dark">Lead Program Manager, Windows...</p>
+              <p class="paragraph paragraph--light">Redmond, WA, USA</p>
+            </div>
+          </div>
+          <div class="ad__company">
+            <img src="img/google.jpg" alt="Company logo" class="ad__img">
+            <div class="ad__company--position">
+              <p class="paragraph paragraph--dark">Senior Software Engineer, Infras...</p>
+              <p class="paragraph paragraph--light">Palo Alto, CA, USA</p>
+            </div>
+          </div>
+          <div class="ad__company"> 
+            <img src="img/amazon.png" alt="Company logo" class="ad__img">
+            <div class="ad__company--position">
+              <p class="paragraph paragraph--dark">Senior Data Science Engineer, Cloud data...</p>
+              <p class="paragraph paragraph--light">Los Angeles, CA, USA</p>
+            </div>
+          </div>         
+          <div class="ad__footer">
+            <p class="ad__footer--text">Carrers at Microsoft</p>
+          </div>
+        </section>
+        <section class="addtofeed">
+          Add to feed goes here
+        </section>              
       </section>
     </main>
   </body>
