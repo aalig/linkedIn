@@ -142,7 +142,7 @@ body {
 .news {
   background-color: #fff;
   display: grid;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.15); }
   .news__header {
@@ -236,6 +236,59 @@ body {
       color: var(--color-secondary);
       border-top: 1px solid rgba(0, 0, 0, 0.15);
       font-weight: 600; }
+
+.subscribe {
+  padding: 1.5rem; }
+  .subscribe__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .7rem; }
+    .subscribe__header--text {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.75); }
+  .subscribe__img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%; }
+  .subscribe__list {
+    list-style: none; }
+  .subscribe__item {
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr;
+    align-items: center;
+    column-gap: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem; }
+  .subscribe__link {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    text-decoration: none; }
+  .subscribe__follow {
+    display: flex;
+    justify-self: end;
+    border: 1px solid var(--color-secondary);
+    padding: .3rem .5rem;
+    transition: all .2s; }
+    .subscribe__follow:hover {
+      background-color: rgba(18, 138, 194, 0.25);
+      border: 2px solid var(--color-secondary); }
+    .subscribe__follow--icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: var(--color-secondary); }
+  .subscribe__btn {
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: var(--color-secondary);
+    cursor: pointer; }
+  .subscribe__recommendation {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-top: .7rem; }
 
 .profile > * {
   background-color: var(--color-white);
