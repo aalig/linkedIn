@@ -290,6 +290,7 @@ body {
     font-weight: 600;
     margin-top: .7rem; }
 
+.sidebar-left > *,
 .profile > * {
   background-color: var(--color-white);
   margin-bottom: 0.2rem;
@@ -344,6 +345,52 @@ body {
   height: 1.75rem;
   width: 1.75rem;
   fill: #000; }
+
+.discover {
+  padding: 1.5rem; }
+  .discover > *:not(:last-child) {
+    margin-bottom: 2rem; }
+  .discover__header {
+    font-weight: 300;
+    margin-bottom: .5rem; }
+    .discover__header--blue {
+      color: var(--color-secondary);
+      font-weight: 400; }
+  .discover__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    cursor: pointer; }
+    .discover__item:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  .discover__link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer; }
+    .discover__link--blue, .discover__link--more {
+      font-weight: 400; }
+    .discover__link--blue {
+      color: var(--color-secondary); }
+    .discover__link--more {
+      color: #000; }
+    .discover__link:hover {
+      color: var(--color-secondary);
+      text-decoration: underline; }
+  .discover__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: rgba(0, 0, 0, 0.75);
+    margin-right: 1rem; }
+  .discover__plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .discover__more {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding-top: 1rem; }
 
 .heading-2 {
   font-size: 1.6rem;

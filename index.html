@@ -68,47 +68,141 @@
     </div>
 
     <main class="container__main">
-      <section class="profile">
-        <div class="profile__header">
-          <div class="profile__header-img"></div>
-          <img src="img/profile.jpg" alt="Profile img" class="profile__img" />
-          <h2 class="heading-2 profile__h2">Abdurahman Gugssa</h2>
-          <p class="paragraph paragraph--light">
-            Senior Project Engineer at Wipro
-          </p>
-        </div>
-        <div class="profile__stats">
-          <div>
-            <div class="profile__stats-details">
-              <p class="paragraph paragraph--light">Who viewed your profile</p>
-              <div class="profile__view-count">24</div>
-            </div>
-            <div class="profile__stats-details">
-              <p class="paragraph paragraph--light">Connections</p>
-              <div class="profile__view-count">385</div>
-            </div>
-            <p class="paragraph paragraph-dark">
-              Grow your network
-            </p>
-          </div>
-          <div>
+      <div class="sidebar-left">
+        <section class="profile">
+          <div class="profile__header">
+            <div class="profile__header-img"></div>
+            <img src="img/profile.jpg" alt="Profile img" class="profile__img" />
+            <h2 class="heading-2 profile__h2">Abdurahman Gugssa</h2>
             <p class="paragraph paragraph--light">
-              Access exclusive tools & insights
-            </p>
-            <p class="paragraph paragraph-dark">
-              Try premium free for one month
+              Senior Project Engineer at Wipro
             </p>
           </div>
-        </div>
-        <div class="profile__saved-items">
-          <svg class="profile__icon">
-            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-          </svg>
-          <p class="paragraph paragraph-dark">
-            Saved items
-          </p>
-        </div>
-      </section>
+          <div class="profile__stats">
+            <div>
+              <div class="profile__stats-details">
+                <p class="paragraph paragraph--light">Who viewed your profile</p>
+                <div class="profile__view-count">24</div>
+              </div>
+              <div class="profile__stats-details">
+                <p class="paragraph paragraph--light">Connections</p>
+                <div class="profile__view-count">385</div>
+              </div>
+              <p class="paragraph paragraph-dark">
+                Grow your network
+              </p>
+            </div>
+            <div>
+              <p class="paragraph paragraph--light">
+                Access exclusive tools & insights
+              </p>
+              <p class="paragraph paragraph-dark">
+                Try premium free for one month
+              </p>
+            </div>
+          </div>
+          <div class="profile__saved-items">
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <p class="paragraph paragraph-dark">
+              Saved items
+            </p>
+          </div>
+        </section>
+        <section class="discover">
+          <div class="discover__recent">
+            <h3 class="discover__header">Recent</h3>
+            <ul class="discover__list">
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Frontend Web Developers</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Ethiopian IT Professionals</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <a href="#" class="discover__link">Javascript</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Full Stack Developers</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <a href="#" class="discover__link">NodeJS</a>
+              </li>
+            </ul>
+          </div>
+          <div class="discover__groups">
+            <a class="discover__link discover__link--blue">Groups</a>
+            <ul class="discover__list">
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Frontend Web Developers</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Ethiopian IT Professionals</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
+                </svg>
+                <a href="#" class="discover__link">Full Stack Developers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="discover__events">            
+            <div class="discover__plus">             
+              <h3 class="discover__header">Events</h3>
+              <svg class="discover__icon">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>    
+            <a class="discover__link discover__link--blue">Followed Hashtags</a>        
+            <ul class="discover__list">
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <a href="#" class="discover__link">React Native</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <a href="#" class="discover__link">NodeJS</a>
+              </li>
+              <li class="discover__item">
+                <svg class="discover__icon">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <a href="#" class="discover__link">Javascript</a>
+              </li>
+            </ul>
+          </div>
+          <div class="discover__more">
+            <a class="discover__link discover__link--more">Discover more</a>
+          </div>
+        </section>
+      </div>     
       <section class="content">
         <section class="post">
           <div class="post__options">
