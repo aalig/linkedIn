@@ -1,4 +1,4 @@
-.feed {
+.feed {  
   &__sort {
     display: grid;
     grid-template-columns: 1fr max-content;
@@ -33,6 +33,31 @@
 
     & > *:not(:last-child) {
       margin-bottom: 1rem;
+    }
+  }
+
+  &__img {
+    width: 100%;   
+  }
+
+  &__learn {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(#128ac2, 0.15);
+  }
+
+  &__btn {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: .2rem 1rem;
+
+    &:hover {
+      filter: brightness(50%);
     }
   }
 
@@ -81,7 +106,6 @@
       justify-self: end;
     }
   }
-
 
   &__text {
     font-size: 1.4rem;
