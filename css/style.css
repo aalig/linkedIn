@@ -227,7 +227,7 @@ body {
   padding: 1rem;
   padding-left: 2.5rem; }
   .ad > *:not(:last-child) {
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
   .ad__header {
     display: flex;
     align-items: center;
@@ -239,7 +239,7 @@ body {
   .ad__icon {
     height: 1rem;
     width: 1rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     fill: rgba(0, 0, 0, 0.6); }
   .ad__me, .ad__company {
     display: grid;
@@ -252,7 +252,7 @@ body {
     text-align: center; }
     .ad__footer--text {
       font-size: 1.4rem;
-      padding-top: .5rem;
+      padding-top: 0.5rem;
       color: var(--color-secondary);
       border-top: 1px solid rgba(0, 0, 0, 0.15);
       font-weight: 600; }
@@ -263,7 +263,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: .7rem; }
+    margin-bottom: 0.7rem; }
     .subscribe__header--text {
       font-size: 1.4rem;
       color: rgba(0, 0, 0, 0.75); }
@@ -289,8 +289,8 @@ body {
     display: flex;
     justify-self: end;
     border: 1px solid var(--color-secondary);
-    padding: .3rem .5rem;
-    transition: all .2s; }
+    padding: 0.3rem 0.5rem;
+    transition: all 0.2s; }
     .subscribe__follow:hover {
       background-color: rgba(18, 138, 194, 0.25);
       border: 2px solid var(--color-secondary); }
@@ -300,15 +300,14 @@ body {
       fill: var(--color-secondary); }
   .subscribe__btn {
     font-size: 1rem;
-    border: none;
-    background: none;
+    text-decoration: none;
     color: var(--color-secondary);
     cursor: pointer; }
   .subscribe__recommendation {
     font-size: 1.2rem;
     color: var(--color-secondary);
     font-weight: 600;
-    margin-top: .7rem; }
+    margin-top: 0.7rem; }
 
 .sidebar-left > *,
 .profile > * {
