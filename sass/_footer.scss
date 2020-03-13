@@ -1,0 +1,43 @@
+.footer {   
+    padding-top: 1rem;
+    margin-top: 1.5rem; 
+    border-top: 1px solid rgba(#000, .25);
+   
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+        padding: .5rem .7rem;
+        list-style: none;    
+        
+        &--more {
+            display: flex;
+            align-items: center;            
+        }   
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: rgba(#000, .75); 
+        
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem; 
+
+        &:hover {fill: var(--color-secondary);  }
+             
+    }  
+}
