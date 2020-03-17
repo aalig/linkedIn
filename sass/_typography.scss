@@ -2,6 +2,7 @@
   font-size: 1.6rem;
   line-height: 1.2;
   color: #2a3133;
+  font-weight: 600;
 }
 
 .paragraph {
@@ -10,12 +11,23 @@
   &--light {
     color: rgba(#000, 0.5);
   }
+
   &--medium {
     color: rgba(#000, 0.75);
+    font-weight: 400;
   }
 
   &--dark {
     color: #333;
     font-weight: 700;
+  }
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

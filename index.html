@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700|Nunito:300,400,400i,600,700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700|Nunito:300,400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -72,7 +75,7 @@
           <div class="profile__header">
             <div class="profile__header-img"></div>
             <img src="img/profile.jpg" alt="Profile img" class="profile__img" />
-            <h2 class="heading-2 profile__h2">Abdurahman Gugssa</h2>
+            <a href="#" class="heading-2 profile__h2">Abdurahman Ali Gugssa</a>
             <p class="paragraph paragraph--light">
               Senior Project Engineer at Wipro
             </p>
@@ -80,38 +83,47 @@
           <div class="profile__stats">
             <div>
               <div class="profile__stats-details">
-                <p class="paragraph paragraph--light">Who viewed your profile</p>
-                <div class="profile__view-count">24</div>
+                <a href="#" class="paragraph paragraph--light link"
+                  >Who viewed your profile</a
+                >
+                <a href="#" class="profile__view-count link">24</a>
               </div>
               <div class="profile__stats-details">
-                <p class="paragraph paragraph--light">Connections</p>
-                <div class="profile__view-count">385</div>
+                <a href="#" class="paragraph paragraph--light link"
+                  >Connections</a
+                >
+                <a href="#" class="profile__view-count link">385</a>
               </div>
-              <p class="paragraph paragraph-dark">
-                Grow your network
-              </p>
+              <a href="#" class="paragraph paragraph--dark link"
+                >Grow your network</a
+              >
             </div>
-            <div>
-              <p class="paragraph paragraph--light">
-                Access exclusive tools & insights
-              </p>
-              <p class="paragraph paragraph-dark">
-                Try premium free for one month
-              </p>
+            <div class="profile__stats--access">
+              <a href="#" class="paragraph paragraph--light link"
+                >Access exclusive tools & insights</a
+              >
+              <a href="#" class="paragraph paragraph--dark link"
+                >Try premium free for one month</a
+              >
             </div>
           </div>
           <div class="profile__saved-items">
             <svg class="profile__icon">
               <use xlink:href="img/sprite.svg#icon-bookmark"></use>
             </svg>
-            <p class="paragraph paragraph-dark">
-              Saved items
-            </p>
+            <a href="#" class="paragraph paragraph--medium link">Saved items</a>
           </div>
         </section>
         <section class="discover">
           <div class="discover__recent">
-            <h3 class="discover__header">Recent</h3>
+            <div class="discover__header">
+              <h3 class="discover__header--text">Recent</h3>
+              <svg
+                class="discover__icon discover__icon--medium discover__icon--toggle"
+              >
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+              </svg>
+            </div>
             <ul class="discover__list">
               <li class="discover__item">
                 <svg class="discover__icon">
@@ -123,7 +135,9 @@
                 <svg class="discover__icon">
                   <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
                 </svg>
-                <a href="#" class="discover__link">Ethiopian IT Professionals</a>
+                <a href="#" class="discover__link"
+                  >Ethiopian IT Professionals</a
+                >
               </li>
               <li class="discover__item">
                 <svg class="discover__icon">
@@ -146,7 +160,14 @@
             </ul>
           </div>
           <div class="discover__groups">
-            <a class="discover__link discover__link--blue">Groups</a>
+            <div class="discover__header">
+              <a class="discover__link discover__link--blue">Groups</a>
+              <svg
+                class="discover__icon discover__icon--medium discover__icon--toggle"
+              >
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+              </svg>
+            </div>
             <ul class="discover__list">
               <li class="discover__item">
                 <svg class="discover__icon">
@@ -158,7 +179,9 @@
                 <svg class="discover__icon">
                   <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
                 </svg>
-                <a href="#" class="discover__link">Ethiopian IT Professionals</a>
+                <a href="#" class="discover__link"
+                  >Ethiopian IT Professionals</a
+                >
               </li>
               <li class="discover__item">
                 <svg class="discover__icon">
@@ -167,15 +190,30 @@
                 <a href="#" class="discover__link">Full Stack Developers</a>
               </li>
             </ul>
+            <div class="discover__show-more">
+              <a class="discover__link">Show more</a>
+              <svg class="discover__icon discover__icon--small">
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+              </svg>
+            </div>
           </div>
-          <div class="discover__events">            
-            <div class="discover__plus">             
+          <div class="discover__events">
+            <div class="discover__plus">
               <h3 class="discover__header">Events</h3>
               <svg class="discover__icon">
                 <use xlink:href="img/sprite.svg#icon-plus"></use>
               </svg>
-            </div>    
-            <a class="discover__link discover__link--blue">Followed Hashtags</a>        
+            </div>
+            <div class="discover__header">
+              <a class="discover__link discover__link--blue"
+                >Followed Hashtags</a
+              >
+              <svg
+                class="discover__icon discover__icon--medium discover__icon--toggle"
+              >
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+              </svg>
+            </div>
             <ul class="discover__list">
               <li class="discover__item">
                 <svg class="discover__icon">
@@ -196,12 +234,18 @@
                 <a href="#" class="discover__link">Javascript</a>
               </li>
             </ul>
+            <div class="discover__show-more">
+              <a class="discover__link">Show more</a>
+              <svg class="discover__icon discover__icon--small">
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+              </svg>
+            </div>
           </div>
           <div class="discover__more">
             <a class="discover__link discover__link--more">Discover more</a>
           </div>
         </section>
-      </div>     
+      </div>
       <section class="content">
         <section class="post">
           <div class="post__options">
@@ -239,10 +283,10 @@
                 <span>Write an article </span>on LinkedIn
               </p>
             </div>
-          </div>               
+          </div>
         </section>
         <section class="feed">
-          <div class="feed__sort"> 
+          <div class="feed__sort">
             <div class="feed__sort--line"></div>
             <div class="feed__sort--by">
               <p class="paragraph paragraph--light">Sort by:</p>
@@ -250,26 +294,42 @@
               <svg class="feed__icon feed__icon--sort">
                 <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
               </svg>
-            </div>          
-          </div>            
+            </div>
+          </div>
           <div class="feed__wrapper">
             <div class="feed__notification">
-              <p class="paragraph paragraph--dark">Bill Gates <span>likes this</span></p>
+              <p class="paragraph paragraph--dark">
+                Bill Gates <span>likes this</span>
+              </p>
               <svg class="feed__icon feed__icon--more">
-                <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
               </svg>
-            </div>            
-            <div class="feed__item">
-              <img src="img/obama.jpg" alt="Friend Profile Image" class="feed__item--img">
-              <div class="feed__item--details">
-                <p class="feed__item--name">Barack Obama</span></p>
-                <p class="paragraph paragraph--light">44th President of the United States</p>
-                <p class="paragraph paragraph--light">3h . Edited . </p>            
-              </div>               
             </div>
-            <p class="feed__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
+            <div class="feed__item">
+              <img
+                src="img/obama.jpg"
+                alt="Friend Profile Image"
+                class="feed__item--img"
+              />
+              <div class="feed__item--details">
+                <p class="feed__item--name">Barack Obama</p>
+                <p class="paragraph paragraph--light">
+                  44th President of the United States
+                </p>
+                <p class="paragraph paragraph--light">3h . Edited .</p>
+              </div>
+            </div>
+            <p class="feed__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
             <p class="feed__more">...see more</p>
             <div class="feed__likes">
               <svg class="feed__icon--likes">
@@ -283,14 +343,16 @@
             <div class="feed__feedback">
               <div class="feed__feedback--item">
                 <svg class="feed__icon--feedback">
-                  <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+                  <use
+                    xlink:href="img/sprite.svg#icon-notifications_active"
+                  ></use>
                 </svg>
                 <p class="paragraph paragraph--light">Like</p>
               </div>
               <div class="feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
-                  </svg>
+                </svg>
                 <p class="paragraph paragraph--light">Comment</p>
               </div>
               <div class="feed__feedback--item">
@@ -298,28 +360,39 @@
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-              </div>                                          
+              </div>
             </div>
           </div>
 
-          <div class="feed__wrapper">                 
+          <div class="feed__wrapper">
             <div class="feed__promoted">
-              <img src="img/microsoft.jpg" alt="Friend Profile Image" class="feed__item--img">
+              <img
+                src="img/microsoft.jpg"
+                alt="Friend Profile Image"
+                class="feed__item--img"
+              />
               <div class="feed__item--details">
-                <p class="feed__item--name">Microsoft Developers</span></p>
+                <p class="feed__item--name">Microsoft Developers</p>
                 <p class="paragraph paragraph--light">105,345 followers</p>
-                <p class="paragraph paragraph--light">Promoted</p>            
-              </div>   
+                <p class="paragraph paragraph--light">Promoted</p>
+              </div>
               <svg class="feed__icon feed__icon--more">
-                <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
-              </svg>            
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
             </div>
-            <p class="feed__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
-            <img src="img/azure.png" alt="Azure Services" class="feed__img"> 
+            <p class="feed__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <img src="img/azure.png" alt="Azure Services" class="feed__img" />
             <div class="feed__learn">
-              <p class="paragraph paragraph--dark">Innovation anywhere with Azure</span></p>
+              <p class="paragraph paragraph--dark">
+                Innovation anywhere with Azure
+              </p>
               <a href="#" class="feed__btn">Learn more</a>
-            </div>                  
+            </div>
             <div class="feed__likes">
               <svg class="feed__icon--likes">
                 <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
@@ -332,14 +405,16 @@
             <div class="feed__feedback">
               <div class="feed__feedback--item">
                 <svg class="feed__icon--feedback">
-                  <use xlink:href="img/sprite.svg#icon-notifications_active"></use>
+                  <use
+                    xlink:href="img/sprite.svg#icon-notifications_active"
+                  ></use>
                 </svg>
                 <p class="paragraph paragraph--light">Like</p>
               </div>
               <div class="feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
-                  </svg>
+                </svg>
                 <p class="paragraph paragraph--light">Comment</p>
               </div>
               <div class="feed__feedback--item">
@@ -347,10 +422,10 @@
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-              </div>                                          
+              </div>
             </div>
           </div>
-        </section>                 
+        </section>
       </section>
       <section class="sidebar-right">
         <section class="news">
@@ -358,8 +433,8 @@
             <h2 class="news__heading">Today's news and views</h2>
             <svg class="news__icon news__icon--outline">
               <use xlink:href="img/sprite.svg#icon-error_outline"></use>
-            </svg>          
-          </div>       
+            </svg>
+          </div>
           <ul class="news__list">
             <li class="news__item">
               <svg class="news__icon news__icon--large">
@@ -367,10 +442,11 @@
               </svg>
               <a href="#" class="news__link">Supply chains hit by virus</a>
               <p class="paragraph paragraph--light">
-                Top news 
+                Top news
                 <svg class="news__icon news__icon--small">
-                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-              </svg> 16,940 readers</span>
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg>
+                16,940 readers
               </p>
             </li>
             <li class="news__item">
@@ -379,10 +455,11 @@
               </svg>
               <a href="#" class="news__link">Corona virus: Official updates</a>
               <p class="paragraph paragraph--light">
-                6hr ago 
+                6hr ago
                 <svg class="news__icon news__icon--small">
-                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-              </svg> 236,550 readers</span>
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg>
+                236,550 readers
               </p>
             </li>
             <li class="news__item">
@@ -393,8 +470,9 @@
               <p class="paragraph paragraph--light">
                 45m ago
                 <svg class="news__icon news__icon--small">
-                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-              </svg> 20,654 readers</span>
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg>
+                20,654 readers
               </p>
             </li>
             <li class="news__item">
@@ -405,8 +483,9 @@
               <p class="paragraph paragraph--light">
                 8hr ago
                 <svg class="news__icon news__icon--small">
-                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-              </svg> 116,875 readers</span>
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg>
+                116,875 readers
               </p>
             </li>
             <li class="news__item">
@@ -420,12 +499,13 @@
                 5hr ago
                 <svg class="news__icon news__icon--small">
                   <use xlink:href="img/sprite.svg#icon-controller-record"></use>
-                </svg> 7,775 readers</span>
+                </svg>
+                7,775 readers
               </p>
             </li>
           </ul>
           <div class="news__more">
-            <a href="#" class="news__link news__link--more">Show more</a>          
+            <a href="#" class="news__link news__link--more">Show more</a>
             <svg class="news__icon">
               <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
             </svg>
@@ -439,33 +519,39 @@
             </svg>
           </div>
           <div class="ad__me">
-            <img src="img/profile.jpg" alt="Profile img" class="ad__img">
+            <img src="img/profile.jpg" alt="Profile img" class="ad__img" />
             <div>
               <p>Abdurahman, need a new challenge?</p>
               <p class="paragraph paragraph--medium">We can help!</p>
             </div>
           </div>
-          <div class="ad__company"> 
-            <img src="img/microsoft.jpg" alt="Company logo" class="ad__img">
+          <div class="ad__company">
+            <img src="img/microsoft.jpg" alt="Company logo" class="ad__img" />
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">Lead Program Manager, Windows...</p>
+              <p class="paragraph paragraph--dark">
+                Lead Program Manager, Windows...
+              </p>
               <p class="paragraph paragraph--light">Redmond, WA, USA</p>
             </div>
           </div>
           <div class="ad__company">
-            <img src="img/google.jpg" alt="Company logo" class="ad__img">
+            <img src="img/google.jpg" alt="Company logo" class="ad__img" />
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">Senior Software Engineer, Infras...</p>
+              <p class="paragraph paragraph--dark">
+                Senior Software Engineer, Infras...
+              </p>
               <p class="paragraph paragraph--light">Palo Alto, CA, USA</p>
             </div>
           </div>
-          <div class="ad__company"> 
-            <img src="img/amazon.png" alt="Company logo" class="ad__img">
+          <div class="ad__company">
+            <img src="img/amazon.png" alt="Company logo" class="ad__img" />
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">Senior Data Science Engineer, Cloud data...</p>
+              <p class="paragraph paragraph--dark">
+                Senior Data Science Engineer, Cloud data...
+              </p>
               <p class="paragraph paragraph--light">Los Angeles, CA, USA</p>
             </div>
-          </div>         
+          </div>
           <div class="ad__footer">
             <p class="ad__footer--text">Carrers at Microsoft</p>
           </div>
@@ -475,82 +561,100 @@
             <p class="subscribe__header--text">Add to your feed</p>
             <svg class="news__icon news__icon--outline">
               <use xlink:href="img/sprite.svg#icon-error_outline"></use>
-            </svg>         
+            </svg>
           </div>
           <ul class="subscribe__list">
             <li class="subscribe__item">
-              <img src="img/bill.jpg" alt="Bill Gates" class="subscribe__img">
+              <img src="img/bill.jpg" alt="Bill Gates" class="subscribe__img" />
               <div class="subscribe__item--company">
-                <a href="#" class="subscribe__link">Bill Gates</a>    
+                <a href="#" class="subscribe__link">Bill Gates</a>
                 <p>NGO . Philantrophy</p>
-              </div>                        
+              </div>
               <div class="subscribe__follow">
                 <svg class="subscribe__follow--icon">
                   <use xlink:href="img/sprite.svg#icon-plus"></use>
                 </svg>
                 <a href="#" class="subscribe__btn">Follow</a>
-              </div>   
+              </div>
             </li>
             <li class="subscribe__item">
-              <img src="img/microsoft.jpg" alt="Bill Gates" class="subscribe__img">
+              <img
+                src="img/microsoft.jpg"
+                alt="Bill Gates"
+                class="subscribe__img"
+              />
               <div class="subscribe__item--company">
-                <a href="#" class="subscribe__link">Microsoft</a>    
+                <a href="#" class="subscribe__link">Microsoft</a>
                 <p>Company . Software</p>
-              </div>         
+              </div>
               <div class="subscribe__follow">
                 <svg class="subscribe__follow--icon">
                   <use xlink:href="img/sprite.svg#icon-plus"></use>
                 </svg>
                 <a href="#" class="subscribe__btn">Follow</a>
-            </div>              
+              </div>
             </li>
             <li class="subscribe__item">
-              <img src="img/apple.png" alt="Bill Gates" class="subscribe__img">
+              <img
+                src="img/apple.png"
+                alt="Bill Gates"
+                class="subscribe__img"
+              />
               <div class="subscribe__item--company">
-                <a href="#" class="subscribe__link">Apple</a>    
+                <a href="#" class="subscribe__link">Apple</a>
                 <p>Company . Hardware & Software</p>
-              </div>         
+              </div>
               <div class="subscribe__follow">
                 <svg class="subscribe__follow--icon">
                   <use xlink:href="img/sprite.svg#icon-plus"></use>
                 </svg>
                 <a href="#" class="subscribe__btn">Follow</a>
-              </div>   
+              </div>
             </li>
-          </ul>         
+          </ul>
           <p class="subscribe__recommendation">View all recommendations</p>
-        </section>    
+        </section>
         <section class="footer">
           <div>
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Help Center</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Help Center</a>
+              </li>
               <li class="footer__item footer__item--more">
                 <a href="#" class="footer__link">Privacy & Terms</a>
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
                 </svg>
-              </li>              
+              </li>
             </ul>
           </div>
           <div>
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Advertising</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Advertising</a>
+              </li>
               <li class="footer__item footer__item--more">
                 <a href="#" class="footer__link">Business Services</a>
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
                 </svg>
-              </li>                 
+              </li>
             </ul>
           </div>
           <div>
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Get the LinkedIn app</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">More</a></li>              
+              <li class="footer__item">
+                <a href="#" class="footer__link">Get the LinkedIn app</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">More</a>
+              </li>
             </ul>
           </div>
-        </section>          
+        </section>
       </section>
     </main>
   </body>
