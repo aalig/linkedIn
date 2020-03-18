@@ -355,19 +355,19 @@
                 </svg>
                 <p class="paragraph paragraph--light">Like</p>
               </button>
-              <button class="feed__feedback--item">
+              <button class="btn feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Comment</p>
               </button>
-              <button class="feed__feedback--item">
+              <button class="btn feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-              </div>
-            </button>
+                </button>
+            </div>
           </div>
           <div class="feed__wrapper">
             <div class="feed__promoted">
@@ -377,9 +377,11 @@
                 class="feed__item--img"
               />
               <div class="feed__item--details">
-                <p class="feed__item--name">Microsoft Developers</p>
-                <p class="paragraph paragraph--light">105,345 followers</p>
-                <p class="paragraph paragraph--light">Promoted</p>
+                <a href="#" class="link link--large link--dark">Microsoft Developers</a>
+                <a href="#" class="link link--feed"
+                  >105,345 followers</a
+                >
+                <a href="#" class="link link--feed">Promoted</a>
               </div>
               <svg class="feed__icon feed__icon--more">
                 <use
@@ -399,35 +401,43 @@
               <a href="#" class="feed__btn">Learn more</a>
             </div>
             <div class="feed__likes">
-              <svg class="feed__icon--likes">
+              <button class="btn">
+                <svg class="feed__icon--likes">
                 <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
+                </svg>
+              </button>
+              <button class="btn">
+                <svg class="feed__icon--likes">
+                  <use xlink:href="img/sprite.svg#icon-lightbulb_outline"></use>
+                </svg>
+              </button>
+              <a href="#" class="link link--light">145</a>
+              <svg class="feed__icon--outline">
+                <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <svg class="feed__icon--likes">
-                <use xlink:href="img/sprite.svg#icon-lightbulb_outline"></use>
-              </svg>
-              <p class="paragraph paragraph--light">145 . 15 comments</p>
+              <a href="#" class="link link--light">15 comments</a>
             </div>
             <div class="feed__feedback">
-              <div class="feed__feedback--item">
+              <button class="btn feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use
                     xlink:href="img/sprite.svg#icon-notifications_active"
                   ></use>
                 </svg>
                 <p class="paragraph paragraph--light">Like</p>
-              </div>
-              <div class="feed__feedback--item">
+              </button>
+              <button class="btn feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-insert_comment"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Comment</p>
-              </div>
-              <div class="feed__feedback--item">
+              </button>
+              <button class="btn feed__feedback--item">
                 <svg class="feed__icon--feedback">
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-              </div>
+                </button>
             </div>
           </div>
         </section>
