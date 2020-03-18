@@ -121,31 +121,6 @@
     }
   }
 
-  &__link {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgba(#000, 0.75);
-    cursor: pointer;
-
-    &--blue,
-    &--more {
-      font-weight: 400;
-    }
-
-    &--blue {
-      color: var(--color-secondary);
-    }
-
-    &--more {
-      color: #000;
-    }
-
-    &:hover {
-      color: var(--color-secondary);
-      text-decoration: underline;
-    }
-  }
-
   &__icon {
     height: 2rem;
     width: 2rem;

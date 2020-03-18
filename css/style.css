@@ -61,6 +61,36 @@ body {
   .link:hover {
     text-decoration: underline; }
 
+.link {
+  font-size: 1.2rem;
+  text-decoration: none; }
+  .link--large {
+    font-size: 1.4rem; }
+  .link--light, .link--medium, .link--dark {
+    color: #333; }
+  .link--medium {
+    font-weight: 400; }
+  .link--dark {
+    font-weight: 700; }
+  .link--blue {
+    font-size: 1.4rem;
+    color: var(--color-secondary); }
+  .link--feed {
+    color: #777; }
+  .link:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    cursor: pointer; }
+  .link--blue:hover, .link--feed:hover {
+    text-decoration: none; }
+  .link--feed:hover {
+    color: #777; }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
 .sidebar-left > * {
   background-color: var(--color-white);
   margin-bottom: 0.5rem;
@@ -150,20 +180,6 @@ body {
     cursor: pointer; }
     .discover__item:hover {
       background-color: var(--color-grey-light-2); }
-  .discover__link {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.75);
-    cursor: pointer; }
-    .discover__link--blue, .discover__link--more {
-      font-weight: 400; }
-    .discover__link--blue {
-      color: var(--color-secondary); }
-    .discover__link--more {
-      color: #000; }
-    .discover__link:hover {
-      color: var(--color-secondary);
-      text-decoration: underline; }
   .discover__icon {
     height: 2rem;
     width: 2rem;
@@ -243,7 +259,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   border: 1px solid currentColor;
-  padding: .2rem 1rem; }
+  padding: 0.2rem 1rem; }
   .feed__btn:hover {
     filter: brightness(50%); }
 
@@ -251,10 +267,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .feed__notification span {
-    font-weight: 400; }
+    justify-self: start; }
 
 .feed__item, .feed__promoted {
   display: grid;
@@ -272,6 +288,8 @@ body {
 
 .feed__item {
   grid-template-columns: max-content 1fr; }
+  .feed__item--details {
+    display: grid; }
 
 .feed__promoted {
   grid-template-columns: repeat(2, max-content) 1fr; }
@@ -289,7 +307,7 @@ body {
 .feed__likes {
   display: flex;
   align-items: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 .feed__feedback {
@@ -307,7 +325,7 @@ body {
 
 .feed__icon--likes, .feed__icon--feedback {
   fill: rgba(0, 0, 0, 0.7);
-  margin-right: .3rem; }
+  margin-right: 0.3rem; }
 
 .feed__icon--likes {
   height: 1.5rem;
@@ -316,6 +334,12 @@ body {
 .feed__icon--more, .feed__icon--feedback {
   height: 2rem;
   width: 2rem; }
+
+.feed__icon--outline {
+  height: 0.5rem;
+  width: 0.5rem;
+  fill: #333;
+  margin: 0 0.5rem; }
 
 .sidebar-right > *:not(:last-child) {
   background-color: var(--color-white);
@@ -539,27 +563,34 @@ body {
     grid-template-columns: 1fr minmax(max-content, 0.75fr);
     align-items: center; }
   .post__write {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    column-gap: 1.5rem;
-    align-items: center;
-    border-right: 1px solid rgba(0, 0, 0, 0.15); }
+    display: flex;
+    align-items: center; }
+  .post__write:hover .post__text {
+    color: var(--color-secondary);
+    text-decoration: underline; }
+  .post__write:hover .post__icon--write {
+    fill: var(--color-secondary); }
   .post__doc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem; }
+    .post__doc > *:hover {
+      background-color: var(--color-grey-light-2); }
     .post__doc > *:not(:last-child) {
       border-right: 1px solid rgba(0, 0, 0, 0.15); }
-  .post__btn {
-    border: none;
-    background-color: transparent;
-    cursor: pointer; }
   .post__text {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none; }
   .post__icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: rgba(0, 0, 0, 0.5); }
+    .post__icon--write {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem; }
     .post__icon--sort {
       fill: #000; }
   .post__article {
@@ -568,9 +599,6 @@ body {
     .post__article--text {
       font-size: 1.4rem;
       color: rgba(0, 0, 0, 0.5); }
-    .post__article span {
-      color: var(--color-secondary);
-      font-weight: 700; }
 
 .footer {
   padding-top: 1rem;

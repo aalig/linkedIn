@@ -1,0 +1,46 @@
+.link {
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  &--large {
+    font-size: 1.4rem;
+  }
+
+  &--light,
+  &--medium,
+  &--dark {
+    color: #333;
+  }
+
+  &--medium {
+    font-weight: 400;
+  }
+
+  &--dark {
+    font-weight: 700;
+  }
+
+  &--blue {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+  }
+
+  &--feed {
+    color: #777;
+  }
+
+  &:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &--blue:hover,
+  &--feed:hover {
+    text-decoration: none;
+  }
+
+  &--feed:hover {
+    color: #777;
+  }
+}
