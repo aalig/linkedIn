@@ -106,9 +106,6 @@
     }
   }
 
-  &__list {
-  }
-
   &__item {
     list-style: none;
     display: flex;
@@ -169,6 +166,14 @@
     &:hover {
       background-color: var(--color-grey-light-2);
     }
+  }
+
+  &__show-more:hover a {
+    color: var(--color-secondary);
+  }
+
+  &__show-more:hover svg {
+    fill: var(--color-secondary);
   }
 
   &__plus {

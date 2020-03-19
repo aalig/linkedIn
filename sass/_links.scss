@@ -2,14 +2,19 @@
   font-size: 1.2rem;
   text-decoration: none;
 
+  &--small {
+    font-size: 1rem;
+  }
+
   &--large {
     font-size: 1.4rem;
   }
 
   &--light,
   &--medium,
-  &--dark {
-    color: #333;
+  &--dark,
+  &--more {
+    color: #444;
   }
 
   &--medium {
@@ -21,8 +26,8 @@
   }
 
   &--blue {
-    font-size: 1.4rem;
     color: var(--color-secondary);
+    font-weight: 600;
   }
 
   &--feed {
@@ -36,11 +41,20 @@
   }
 
   &--blue:hover,
-  &--feed:hover {
+  &--feed:hover,
+  &--more:hover {
     text-decoration: none;
   }
 
   &--feed:hover {
     color: #777;
+  }
+
+  &--more:hover {
+    color: currentColor;
+  }
+
+  &--blue:hover {
+    color: var(--color-tertiary);
   }
 }

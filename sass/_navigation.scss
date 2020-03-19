@@ -4,23 +4,39 @@
   &__list {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   &__item {
     display: grid;
     justify-items: center;
-    align-content: start;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__link {
     font-size: 1.2rem;
-    color: var(--color-grey-light-1);
+    color: #ccc;
     text-decoration: none;
   }
 
   &__icon {
     height: 2.5rem;
-    fill: var(--color-grey-light-1);
+    fill: #ccc;
+
+    &:hover {
+      fill: #fff;
+    }
+  }
+
+  &__item:hover &__link {
+    color: #fff;
+  }
+
+  &__item:hover &__icon {
+    fill: #fff;
   }
 }

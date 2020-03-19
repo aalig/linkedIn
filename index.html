@@ -16,6 +16,9 @@
   <body class="container">
     <div class="container__header">
       <header class="header">
+        <!-- <svg class="header__icon">
+          <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+        </svg> -->
         <img src="img/logo.png" alt="Navbar logo" class="header__logo" />
         <form action="#" class="search">
           <svg class="search__icon">
@@ -74,7 +77,13 @@
         <section class="profile">
           <div class="profile__header">
             <div class="profile__header-img"></div>
-            <img src="img/profile.jpg" alt="Profile img" class="profile__img" />
+            <button class="btn">
+              <img
+                src="img/profile.jpg"
+                alt="Profile img"
+                class="profile__img"
+              />
+            </button>
             <a href="#" class="heading-2 profile__h2">Abdurahman Ali Gugssa</a>
             <p class="paragraph paragraph--light">
               Senior Project Engineer at Wipro
@@ -278,8 +287,9 @@
             </div>
             <div class="post__article">
               <p class="post__article--text">
-                <a href="#" class="link link--blue">Write an article </a>on
-                LinkedIn
+                <a href="#" class="link link--blue link--large"
+                  >Write an article </a
+                >on LinkedIn
               </p>
             </div>
           </div>
@@ -306,11 +316,13 @@
               </svg>
             </div>
             <div class="feed__item">
-              <img
-                src="img/obama.jpg"
-                alt="Friend Profile Image"
-                class="feed__item--img"
-              />
+              <button class="btn">
+                <img
+                  src="img/obama.jpg"
+                  alt="Friend Profile Image"
+                  class="feed__item--img"
+                />
+              </button>
               <div class="feed__item--details">
                 <a href="#" class="link link--large link--dark">Barack Obama</a>
                 <a href="#" class="link link--feed"
@@ -366,21 +378,24 @@
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-                </button>
+              </button>
             </div>
           </div>
           <div class="feed__wrapper">
             <div class="feed__promoted">
-              <img
-                src="img/microsoft.jpg"
-                alt="Friend Profile Image"
-                class="feed__item--img"
-              />
+              <button class="btn">
+                <img
+                  src="img/microsoft.jpg"
+                  alt="Friend Profile Image"
+                  class="feed__item--img"
+                />
+              </button>
+
               <div class="feed__item--details">
-                <a href="#" class="link link--large link--dark">Microsoft Developers</a>
-                <a href="#" class="link link--feed"
-                  >105,345 followers</a
+                <a href="#" class="link link--large link--dark"
+                  >Microsoft Developers</a
                 >
+                <a href="#" class="link link--feed">105,345 followers</a>
                 <a href="#" class="link link--feed">Promoted</a>
               </div>
               <svg class="feed__icon feed__icon--more">
@@ -403,7 +418,7 @@
             <div class="feed__likes">
               <button class="btn">
                 <svg class="feed__icon--likes">
-                <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
+                  <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
                 </svg>
               </button>
               <button class="btn">
@@ -437,7 +452,7 @@
                   <use xlink:href="img/sprite.svg#icon-share"></use>
                 </svg>
                 <p class="paragraph paragraph--light">Share</p>
-                </button>
+              </button>
             </div>
           </div>
         </section>
@@ -446,16 +461,20 @@
         <section class="news">
           <div class="news__header">
             <h2 class="news__heading">Today's news and views</h2>
-            <svg class="news__icon news__icon--outline">
-              <use xlink:href="img/sprite.svg#icon-error_outline"></use>
-            </svg>
+            <button class="btn">
+              <svg class="news__icon news__icon--outline">
+                <use xlink:href="img/sprite.svg#icon-error_outline"></use>
+              </svg>
+            </button>
           </div>
           <ul class="news__list">
             <li class="news__item">
-              <svg class="news__icon news__icon--large">
+              <svg class="news__icon news__icon--medium">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <a href="#" class="news__link">Supply chains hit by virus</a>
+              <a href="#" class="link link--dark link--large"
+                >Supply chains hit by virus</a
+              >
               <p class="paragraph paragraph--light">
                 Top news
                 <svg class="news__icon news__icon--small">
@@ -465,10 +484,12 @@
               </p>
             </li>
             <li class="news__item">
-              <svg class="news__icon news__icon--large">
+              <svg class="news__icon news__icon--medium">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <a href="#" class="news__link">Corona virus: Official updates</a>
+              <a href="#" class="link link--dark link--large"
+                >Corona virus: Official updates</a
+              >
               <p class="paragraph paragraph--light">
                 6hr ago
                 <svg class="news__icon news__icon--small">
@@ -478,10 +499,12 @@
               </p>
             </li>
             <li class="news__item">
-              <svg class="news__icon news__icon--large">
+              <svg class="news__icon news__icon--medium">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <a href="#" class="news__link">Fed slices rates by half point</a>
+              <a href="#" class="link link--dark link--large"
+                >Fed slices rates by half point</a
+              >
               <p class="paragraph paragraph--light">
                 45m ago
                 <svg class="news__icon news__icon--small">
@@ -491,10 +514,12 @@
               </p>
             </li>
             <li class="news__item">
-              <svg class="news__icon news__icon--large">
+              <svg class="news__icon news__icon--medium">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <a href="#" class="news__link">Advice to your younger self</a>
+              <a href="#" class="link link--dark link--large"
+                >Advice to your younger self</a
+              >
               <p class="paragraph paragraph--light">
                 8hr ago
                 <svg class="news__icon news__icon--small">
@@ -504,10 +529,10 @@
               </p>
             </li>
             <li class="news__item">
-              <svg class="news__icon news__icon--large">
+              <svg class="news__icon news__icon--medium">
                 <use xlink:href="img/sprite.svg#icon-controller-record"></use>
               </svg>
-              <a href="#" class="news__link"
+              <a href="#" class="link link--dark link--large"
                 >Airlines, airports feel virus impact</a
               >
               <p class="paragraph paragraph--light">
@@ -520,7 +545,7 @@
             </li>
           </ul>
           <div class="news__more">
-            <a href="#" class="news__link news__link--more">Show more</a>
+            <a href="#" class="link link--more">Show more</a>
             <svg class="news__icon">
               <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
             </svg>
@@ -529,54 +554,70 @@
         <section class="ad">
           <div class="ad__header">
             <p class="paragraph paragraph--light">Ad</p>
-            <svg class="ad__icon">
-              <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
-            </svg>
+            <button class="btn">
+              <svg class="ad__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+            </button>
           </div>
           <div class="ad__me">
-            <img src="img/profile.jpg" alt="Profile img" class="ad__img" />
+            <button class="btn">
+              <img src="img/profile.jpg" alt="Profile img" class="ad__img" />
+            </button>
             <div>
-              <p>Abdurahman, need a new challenge?</p>
+              <a href="#" class="link link--light link--small"
+                >Abdurahman, need a new challenge?</a
+              >
               <p class="paragraph paragraph--medium">We can help!</p>
             </div>
           </div>
           <div class="ad__company">
-            <img src="img/microsoft.jpg" alt="Company logo" class="ad__img" />
+            <button class="btn">
+              <img src="img/microsoft.jpg" alt="Company logo" class="ad__img" />
+            </button>
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">
-                Lead Program Manager, Windows...
-              </p>
+              <a href="#" class="link link--medium"
+                >Lead Program Manager, Windows...</a
+              >
               <p class="paragraph paragraph--light">Redmond, WA, USA</p>
             </div>
           </div>
           <div class="ad__company">
-            <img src="img/google.jpg" alt="Company logo" class="ad__img" />
+            <button class="btn">
+              <img src="img/google.jpg" alt="Company logo" class="ad__img" />
+            </button>
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">
-                Senior Software Engineer, Infras...
-              </p>
+              <a href="#" class="link link--medium"
+                >Senior Software Engineer, Infras...</a
+              >
               <p class="paragraph paragraph--light">Palo Alto, CA, USA</p>
             </div>
           </div>
           <div class="ad__company">
-            <img src="img/amazon.png" alt="Company logo" class="ad__img" />
+            <button class="btn">
+              <img src="img/amazon.png" alt="Company logo" class="ad__img" />
+            </button>
             <div class="ad__company--position">
-              <p class="paragraph paragraph--dark">
-                Senior Data Science Engineer, Cloud data...
-              </p>
+              <a href="#" class="link link--medium"
+                >Senior Data Science Engineer, Cloud data...</a
+              >
               <p class="paragraph paragraph--light">Los Angeles, CA, USA</p>
             </div>
           </div>
           <div class="ad__footer">
-            <p class="ad__footer--text">Carrers at Microsoft</p>
+            <a href="#" class="link link--blue">Carrers at Microsoft</a>
           </div>
         </section>
         <section class="subscribe">
           <div class="subscribe__header">
             <p class="subscribe__header--text">Add to your feed</p>
-            <svg class="news__icon news__icon--outline">
-              <use xlink:href="img/sprite.svg#icon-error_outline"></use>
-            </svg>
+            <button class="btn">
+              <svg class="news__icon news__icon--outline">
+                <use xlink:href="img/sprite.svg#icon-error_outline"></use>
+              </svg>
+            </button>
           </div>
           <ul class="subscribe__list">
             <li class="subscribe__item">
@@ -627,7 +668,7 @@
               </div>
             </li>
           </ul>
-          <p class="subscribe__recommendation">View all recommendations</p>
+          <a href="#" class="link link--blue">View all recommendations</a>
         </section>
         <section class="footer">
           <div>
@@ -668,6 +709,17 @@
                 <a href="#" class="footer__link">More</a>
               </li>
             </ul>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__logo">
+              <p class="footer__text footer__text--dark">Linked</p>
+              <svg class="footer__icon footer__icon--small">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+            <p class="footer__text">
+              LinkedIn Corporation © 2020
+            </p>
           </div>
         </section>
       </section>

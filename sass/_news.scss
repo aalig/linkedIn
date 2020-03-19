@@ -35,12 +35,19 @@
     display: flex;
     align-items: center;
     justify-self: start;
-    align-self: start;
     padding: 0 1rem;
+
+    a {
+      margin-right: 3px;
+    }
 
     &:hover {
       background-color: rgba(#000, 0.05);
     }
+  }
+
+  &__more:hover a {
+    font-weight: 500;
   }
 
   &__item {
@@ -54,49 +61,24 @@
     }
 
     &:hover {
-      background-color: rgba(#000, 0.15);
-    }
-  }
-
-  &__link {
-    font-size: 1.4rem;
-    color: rgba(#000, 0.6);
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--color-secondary);
-      text-decoration: underline;
-    }
-
-    &--more {
-      font-weight: 400;
-      margin-right: 0.5rem;
-
-      &:hover {
-        text-decoration: none;
-        color: rgba(#000, 0.6);
-        font-weight: 400;
-      }
+      background-color: #eee;
     }
   }
 
   &__icon {
-    height: 1.5rem;
-    width: 1.5rem;
-
-    &--large {
-      height: 1.2rem;
-      width: 1.2rem;
-      fill: var(--color-secondary);
-      margin-right: 0.5rem;
-    }
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: #444;
 
     &--small {
       height: 0.5rem;
       width: 0.5rem;
       fill: rgba(#000, 0.6);
+    }
+
+    &--medium {
+      fill: var(--color-secondary);
+      margin-right: 0.5rem;
     }
   }
 }
@@ -140,6 +122,10 @@
   &__company {
     &--position {
       border-bottom: 1px solid rgba(#000, 0.1);
+
+      &:hover {
+        background-color: #eee;
+      }
     }
   }
 
