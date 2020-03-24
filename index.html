@@ -16,9 +16,6 @@
   <body class="container">
     <div class="container__header">
       <header class="header">
-        <!-- <svg class="header__icon">
-          <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-        </svg> -->
         <img src="img/logo.png" alt="Navbar logo" class="header__logo" />
         <form action="#" class="search">
           <svg class="search__icon">
@@ -29,12 +26,18 @@
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
+              <span>
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-record"></use>
+                </svg>
+              </span>
               <svg class="navbar__icon">
                 <use xlink:href="img/sprite.svg#icon-home"></use>
               </svg>
               <a href="#" class="navbar__link">Home</a>
             </li>
             <li class="navbar__item">
+              <span>5</span>
               <svg class="navbar__icon">
                 <use xlink:href="img/sprite.svg#icon-grouppeople"></use>
               </svg>
@@ -55,6 +58,7 @@
               <a href="#" class="navbar__link">Messaging</a>
             </li>
             <li class="navbar__item">
+              <span>9</span>
               <svg class="navbar__icon">
                 <use
                   xlink:href="img/sprite.svg#icon-notifications_active"
@@ -63,10 +67,34 @@
               <a href="#" class="navbar__link">Notifications</a>
             </li>
             <li class="navbar__item">
+              <img
+                src="img/profile.jpg"
+                alt="Profile photo"
+                class="navbar__img"
+              />
+              <div class="navbar__item--more">
+                <a href="#" class="navbar__link">Me</a>
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="navbar__item navbar__item--line">
+              <div class="navbar__me"></div>
+            </li>
+            <li class="navbar__item">
               <svg class="navbar__icon">
                 <use xlink:href="img/sprite.svg#icon-apps"></use>
               </svg>
-              <a href="#" class="navbar__link">Me</a>
+              <div class="navbar__item--more">
+                <a href="#" class="navbar__link">Work</a>
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="navbar__item navbar__item--try">
+              <a href="#" class="navbar__link">Try Premium Free for 1 Month</a>
             </li>
           </ul>
         </nav>
@@ -307,13 +335,15 @@
           </div>
           <div class="feed__wrapper">
             <div class="feed__notification">
-              <a href="#" class="link link--medium">Bill Gates </a>
-              <span>likes this</span>
-              <svg class="feed__icon feed__icon--more">
-                <use
-                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
-                ></use>
-              </svg>
+              <a href="#" class="link link--medium">Bill Gates</a>
+              <p>likes this</p>
+              <button class="btn btn--horizontal">
+                <svg class="feed__icon feed__icon--more">
+                  <use
+                    xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                  ></use>
+                </svg>
+              </button>
             </div>
             <div class="feed__item">
               <button class="btn">
@@ -398,11 +428,13 @@
                 <a href="#" class="link link--feed">105,345 followers</a>
                 <a href="#" class="link link--feed">Promoted</a>
               </div>
-              <svg class="feed__icon feed__icon--more">
-                <use
-                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
-                ></use>
-              </svg>
+              <button class="btn btn--horizontal">
+                <svg class="feed__icon feed__icon--more">
+                  <use
+                    xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                  ></use>
+                </svg>
+              </button>
             </div>
             <p class="feed__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
