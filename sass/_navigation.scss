@@ -8,6 +8,12 @@
     justify-content: space-evenly;
   }
 
+  &__item--line + &__item {
+    @include breakpoint(small-lg) {
+      display: none;
+    }
+  }
+
   &__item {
     @include grid-center;
     grid-template-columns: minmax(6.5rem, 1fr);
@@ -20,6 +26,10 @@
     &--line {
       max-width: 1px;
       margin: 0 -2rem;
+
+      @include breakpoint(small-lg) {
+        display: none;
+      }
     }
 
     &--try {
@@ -29,6 +39,10 @@
       a {
         color: #dccea4;
         font-weight: 400;
+      }
+
+      @include breakpoint(mid) {
+        display: none;
       }
     }
 

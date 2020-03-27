@@ -20,3 +20,66 @@
   align-items: center;
   justify-items: center;
 }
+
+/////// MEDIA QUERY MANAGER //////////
+/* 
+0 - 600px:          Phone
+600 - 900px:        Tablet Portrait
+900 - 1200px:       Tablet Landscape
+[1200 - 1800px]:    Current normal styles apply
+1800px + :          Big Desktop
+
+
+$breakpoint argument choices:
+- smallest        //600px
+- small-mid       //700px
+- small-lg        //800px
+- small           //900px
+- mid             //1000px
+- large           //1200px
+- largest         //1800px +
+- 1em = 16px
+*/
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == smallest {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-mid {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-lg {
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mid {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == largest {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

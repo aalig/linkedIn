@@ -5,6 +5,14 @@
     border: 1px solid rgba(#000, 0.15);
     box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
   }
+
+  @include breakpoint(small) {
+    margin-top: -18rem;
+  }
+
+  @include breakpoint(small-lg) {
+    margin-top: -12rem;
+  }
 }
 
 .news {

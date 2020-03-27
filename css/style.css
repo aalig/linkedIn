@@ -1,3 +1,21 @@
+/* 
+0 - 600px:          Phone
+600 - 900px:        Tablet Portrait
+900 - 1200px:       Tablet Landscape
+[1200 - 1800px]:    Current normal styles apply
+1800px + :          Big Desktop
+
+
+$breakpoint argument choices:
+- smallest        //600px
+- small-mid       //700px
+- small-lg        //800px
+- small           //900px
+- mid             //1000px
+- large           //1200px
+- largest         //1800px +
+- 1em = 16px
+*/
 :root {
   --color-primary: #5d5b6a;
   --color-primary-dark: #464159;
@@ -21,6 +39,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: var(--font-primary);
@@ -37,6 +61,20 @@ body {
   display: grid;
   grid-template-columns: 1fr 2.5fr 1.2fr;
   column-gap: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .container__main {
+      margin: 1.5rem auto;
+      width: max-width; } }
+  @media only screen and (max-width: 62.5em) {
+    .container__main {
+      grid-template-columns: 1fr 2fr 1fr; } }
+  @media only screen and (max-width: 56.25em) {
+    .container__main {
+      grid-template-columns: 1fr 3fr;
+      margin: 1.5rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .container__main {
+      grid-template-columns: 1fr 10fr; } }
 
 .heading-2 {
   font-size: 1.6rem;
@@ -367,6 +405,14 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15); }
 
+@media only screen and (max-width: 56.25em) {
+  .sidebar-right {
+    margin-top: -18rem; } }
+
+@media only screen and (max-width: 50em) {
+  .sidebar-right {
+    margin-top: -12rem; } }
+
 .news {
   background-color: #fff;
   display: grid;
@@ -514,6 +560,9 @@ body {
   margin-right: auto;
   margin-left: auto;
   align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      max-width: 92.5%; } }
   .header__icon {
     height: 3.5rem;
     width: 3.5rem;
@@ -523,8 +572,8 @@ body {
     height: 3.5rem; }
 
 .search {
-  width: 15vw;
   display: flex;
+  flex: 0 0 25%;
   align-items: center;
   position: relative; }
   .search__icon {
@@ -551,6 +600,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+  @media only screen and (max-width: 50em) {
+    .navbar__item--line + .navbar__item {
+      display: none; } }
   .navbar__item {
     display: grid;
     align-items: center;
@@ -564,12 +616,18 @@ body {
     .navbar__item--line {
       max-width: 1px;
       margin: 0 -2rem; }
+      @media only screen and (max-width: 50em) {
+        .navbar__item--line {
+          display: none; } }
     .navbar__item--try {
       text-align: center;
       max-width: 10rem; }
       .navbar__item--try a {
         color: #dccea4;
         font-weight: 400; }
+      @media only screen and (max-width: 62.5em) {
+        .navbar__item--try {
+          display: none; } }
     .navbar__item span {
       height: 1.6rem;
       width: 1.6rem;

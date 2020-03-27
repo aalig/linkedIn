@@ -27,6 +27,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include breakpoint(large) {
+    font-size: 56.25%;
+  }
+
+  @include breakpoint(small) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -48,5 +56,23 @@ body {
     display: grid;
     grid-template-columns: 1fr 2.5fr 1.2fr;
     column-gap: 2rem;
+
+    @include breakpoint(large) {
+      margin: 1.5rem auto;
+      width: max-width;
+    }
+
+    @include breakpoint(mid) {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    @include breakpoint(small) {
+      grid-template-columns: 1fr 3fr;
+      margin: 1.5rem;
+    }
+
+    @include breakpoint(small-mid) {
+      grid-template-columns: 1fr 10fr;
+    }
   }
 }
