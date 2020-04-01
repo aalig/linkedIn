@@ -13,6 +13,10 @@
   @include breakpoint(small-lg) {
     margin-top: -12rem;
   }
+
+  @include breakpoint(smallest) {
+    margin-top: 0.5rem;
+  }
 }
 
 .news {
