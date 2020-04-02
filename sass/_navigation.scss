@@ -4,7 +4,6 @@
   @include breakpoint(smallest) {
     grid-column: 1 / -1;
     padding-top: 0.5rem;
-    border-top: 1px solid #ccc;
   }
 
   &__list {
