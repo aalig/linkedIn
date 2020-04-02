@@ -31,6 +31,10 @@
 
     &--more {
       @include flex-center;
+
+      @include breakpoint(smallest) {
+        align-items: flex-start;
+      }
     }
 
     &--line {
