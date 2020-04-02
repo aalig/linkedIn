@@ -565,7 +565,7 @@ body {
     margin-top: 0.7rem; }
 
 .header {
-  height: 6vh;
+  height: 7.5vh;
   display: grid;
   grid-template-columns: min-content max-content 1fr;
   gap: 2rem;
