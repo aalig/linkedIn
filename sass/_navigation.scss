@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @include breakpoint(smallest) {
+      align-items: flex-start;
+    }
   }
 
   &__item--line + &__item {

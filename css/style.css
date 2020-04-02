@@ -630,6 +630,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list {
+        align-items: flex-start; } }
   @media only screen and (max-width: 50em) {
     .navbar__item--line + .navbar__item {
       display: none; } }
