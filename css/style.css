@@ -578,8 +578,9 @@ body {
       max-width: 92.5%; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 12vh;
+      height: 11vh;
       grid-template-columns: min-content 1fr;
+      row-gap: 1rem;
       max-width: 100%; } }
   .header__icon {
     height: 3.5rem;
