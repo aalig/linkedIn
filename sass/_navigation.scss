@@ -99,6 +99,10 @@
     border-radius: 50%;
     border: 1px solid #ccc;
     margin-top: 0.5rem;
+
+    @include breakpoint(smallest) {
+      margin-top: 0;
+    }
   }
 
   &__icon {

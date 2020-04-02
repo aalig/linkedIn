@@ -694,6 +694,9 @@ body {
     border-radius: 50%;
     border: 1px solid #ccc;
     margin-top: 0.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__img {
+        margin-top: 0; } }
   .navbar__icon {
     height: 2.5rem;
     width: 2.5rem;
